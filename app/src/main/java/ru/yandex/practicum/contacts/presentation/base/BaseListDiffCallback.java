@@ -12,6 +12,6 @@ public class BaseListDiffCallback<T extends ListDiffInterface> extends DiffUtil.
 
     @Override
     public boolean areContentsTheSame(@NonNull T t, @NonNull T t1) {
-        return false;
+        return t.equals(t1);
     }
 }
